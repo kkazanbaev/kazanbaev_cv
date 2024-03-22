@@ -47,8 +47,8 @@ print(f"Total objects = {total_obj}")
 
 print(label(binary_erosion(LB, mask1)).max())
 print(label(binary_erosion(LB, mask2)).max())
-print(label(binary_erosion(LB, mask3)).max())
-print(label(binary_erosion(LB, mask4)).max())
+print(label(binary_erosion(LB, mask3)).max() - label(binary_erosion(LB, mask5)).max())
+print(label(binary_erosion(LB, mask4)).max() - label(binary_erosion(LB, mask5)).max())
 print(label(binary_erosion(LB, mask5)).max())
 
 
